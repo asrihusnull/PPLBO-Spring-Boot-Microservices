@@ -1,0 +1,13 @@
+version: '4'
+services:
+  mongodb:
+    image: mongo:7.0.5
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: product-service
+    volumes: //untuk menyimpan data MongoDB agar tetap ada meskipun container dihentikan atau dihapus
+      - ./data:/data/db  //./data → Direktori pada host (lokal), /data/db → Direktori di dalam container tempat MongoDB menyimpan data
