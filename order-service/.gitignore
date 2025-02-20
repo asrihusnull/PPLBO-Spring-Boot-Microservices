@@ -31,10 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
-/docker/
+/docker/mysql/
+/mysql/
 
 order-service/mysql/mysql.sock
-order-service/mysql/data/*
+order-service/mysql/*
 # order-service/!docker/mysql/*.sql
 order-service/mvnw.cmd
 
