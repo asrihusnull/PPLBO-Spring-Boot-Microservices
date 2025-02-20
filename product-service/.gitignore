@@ -34,5 +34,3 @@ build/
 /docker/mongodb/data/
 /docker/
 product-service/mvnw.cmd
-
-data/
