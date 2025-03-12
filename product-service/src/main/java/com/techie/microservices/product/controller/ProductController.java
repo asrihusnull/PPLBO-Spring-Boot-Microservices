@@ -31,6 +31,11 @@ public class ProductController {
     @GetMapping //Menangani HTTP GET request untuk mendapatkan semua produk
     @ResponseStatus(HttpStatus.OK) //Mengembalikan status 200 OK
     public List<ProductResponse> getAllProducts(){ //Mengembalikan daftar produk
+        // try{
+        //     Thread.sleep(5000);
+        // } catch (InterruptedException e){
+        //     throw new RuntimeException(e);
+        // }
         return productService.getAllProducts();
     }
 
